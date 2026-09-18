@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1030" viewBox="0 0 1320 1030" role="img" aria-labelledby="title desc">
+  <title id="title">У8. Тронный зал Регента — схема для мастера</title>
+  <desc id="desc">У8. Помещение 80 на 60 футов. Одна клетка — 5 футов. Север наверху. Южный вход ведёт из сада У7, северный выход — в библиотеку У9. В 15 футах от южной стены проходит видимая граница охраны: пересечение границы или воздействие на охраняемые объекты запускает инициативу до разрешения действия. Колонна Корона у северо-западного угла, Ступни — у северо-восточного, Ладони — на западной галерее высотой 15 футов. Регент охраняет северный выход; призма находится в его груди. Два стража стоят севернее центрального помоста. На помосте высотой 5 футов в едином стазисе находятся префект, его супруга и дочь. Стазис виден от входа и доступен для Рассеивания магии из южной зоны; сначала бросается инициатива. Записей основной библиотеки в тронном зале нет.</desc>
+  <defs>
+    <pattern id="grid" x="200" y="130" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 H 0 V 50" fill="none" stroke="#c8cbd0" stroke-width="1"/>
+    </pattern>
+    <pattern id="galleryHatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="10" height="10" fill="#e2e8f0"/>
+      <path d="M 0 0 V 10" stroke="#c2ccda" stroke-width="2"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#576272"/>
+    </marker>
+    <style>
+      text { font-family: 'Segoe UI', Arial, sans-serif; fill: #222b38; }
+      .title { font-size: 30px; font-weight: 700; }
+      .subtitle { font-size: 17px; fill: #576272; }
+      .label { font-size: 19px; font-weight: 600; }
+      .note { font-size: 16px; fill: #576272; }
+      .small { font-size: 14px; fill: #576272; }
+      .token { font-size: 20px; font-weight: 700; text-anchor: middle; dominant-baseline: central; }
+      .leader { fill: none; stroke: #576272; stroke-width: 1.5; }
+      .cable { fill: none; stroke: #7b6496; stroke-width: 3; stroke-dasharray: 8 5; opacity: .75; }
+      .column { fill: #f2dca7; stroke: #8c651c; stroke-width: 2.5; }
+    </style>
+  </defs>
+
+  <rect width="1320" height="1030" fill="#ffffff"/>
+  <text class="title" x="60" y="49">У8. Тронный зал Регента</text>
+  <text class="subtitle" x="60" y="80">Схема для мастера · 80 × 60 футов · 1 клетка = 5 футов · потолок 30 футов</text>
+
+  <!-- Масштаб: 10 SVG-единиц на фут; поле содержит ровно 16 × 12 клеток. -->
+  <rect x="200" y="130" width="800" height="600" fill="#fafaf8"/>
+  <rect x="200" y="580" width="800" height="150" fill="#fbf4dc"/>
+  <rect x="200" y="130" width="800" height="600" fill="url(#grid)"/>
+  <path d="M 550 730 H 200 V 130 H 550 M 650 130 H 1000 V 730 H 650" fill="none" stroke="#222b38" stroke-width="6"/>
+
+  <!-- Размеры помещения и направление севера. -->
+  <path class="leader" d="M 200 113 V 102 M 1000 113 V 102 M 200 108 H 1000"/>
+  <rect x="355" y="94" width="90" height="24" fill="#fff"/>
+  <text class="note" x="400" y="112" text-anchor="middle">80 футов</text>
+  <rect x="515" y="92" width="170" height="28" fill="#fff"/>
+  <text class="label" x="600" y="112" text-anchor="middle">В библиотеку</text>
+  <path d="M 600 164 V 136" fill="none" stroke="#576272" stroke-width="2" marker-end="url(#arrow)"/>
+  <path class="leader" d="M 1020 130 H 1032 M 1020 730 H 1032 M 1027 130 V 730"/>
+  <text class="note" x="1050" y="456" transform="rotate(-90 1050 456)" text-anchor="middle">60 футов</text>
+  <path d="M 1210 155 V 106" stroke="#222b38" stroke-width="3" marker-end="url(#arrow)"/>
+  <text class="label" x="1210" y="94" text-anchor="middle">С</text>
+
+  <!-- Западная галерея: 15 × 20 футов, +15 футов от уровня пола. -->
+  <rect x="200" y="330" width="150" height="200" fill="url(#galleryHatch)" stroke="#617387" stroke-width="2"/>
+  <path d="M 350 330 V 530 M 200 330 H 350 M 200 530 H 250 M 300 530 H 350" fill="none" stroke="#617387" stroke-width="4"/>
+  <text class="small" x="275" y="475" text-anchor="middle">Галерея</text>
+  <text class="label" x="275" y="499" text-anchor="middle">+15 фт</text>
+
+  <!-- Лестница шириной 5 футов: подъём к северу, на галерею. -->
+  <rect x="250" y="530" width="50" height="150" fill="#e2e8f0" stroke="#617387" stroke-width="2"/>
+  <path d="M 250 545 H 300 M 250 560 H 300 M 250 575 H 300 M 250 590 H 300 M 250 605 H 300 M 250 620 H 300 M 250 635 H 300 M 250 650 H 300 M 250 665 H 300" stroke="#7d8c9d" stroke-width="1.5"/>
+  <path d="M 275 665 V 543" stroke="#576272" stroke-width="2" marker-end="url(#arrow)"/>
+  <path class="leader" d="M 247 610 H 183"/>
+  <text class="label" x="174" y="605" text-anchor="end">Лестница</text>
+  <text class="note" x="174" y="629" text-anchor="end">вверх к галерее</text>
+
+  <!-- Центральный помост: 20 × 10 футов, +5 футов. -->
+  <rect x="500" y="380" width="200" height="100" rx="3" fill="#ede4d3" stroke="#8a7960" stroke-width="3"/>
+  <path d="M 580 480 V 495 H 620 V 480 M 580 487 H 620" fill="none" stroke="#8a7960" stroke-width="2"/>
+  <!-- Единый стазис охватывает трёх членов семьи, а не весь зал. -->
+  <rect x="509" y="389" width="182" height="79" rx="25" fill="#d9f0f4" fill-opacity=".85" stroke="#438b9b" stroke-width="2" stroke-dasharray="6 4"/>
+  <text class="small" x="600" y="405" text-anchor="middle">Стазис</text>
+  <circle cx="550" cy="429" r="15" fill="#97c7d1" stroke="#367788" stroke-width="2"/>
+  <text class="token" x="550" y="429" style="font-size:16px">С</text>
+  <circle cx="600" cy="429" r="15" fill="#78b3c1" stroke="#367788" stroke-width="2"/>
+  <text class="token" x="600" y="429" style="font-size:16px">П</text>
+  <circle cx="650" cy="429" r="15" fill="#97c7d1" stroke="#367788" stroke-width="2"/>
+  <text class="token" x="650" y="429" style="font-size:16px">Д</text>
+  <text class="small" x="600" y="462" text-anchor="middle">Помост +5 фт</text>
+  <path class="leader" d="M 700 420 H 1073"/>
+  <text class="label" x="1085" y="408">Семья префекта</text>
+  <text class="note" x="1085" y="433">«П» — префект.</text>
+  <text class="note" x="1085" y="457">С — супруга; Д — дочь.</text>
+  <text class="note" x="1085" y="481">Рассеивание: Сл 17.</text>
+
+  <!-- Командные кабели. Это схема связи, не стены и не непроходимые клетки. -->
+  <path class="cable" d="M 273 180 H 505 L 565 208"/>
+  <path class="cable" d="M 927 180 H 695 L 635 208"/>
+  <path class="cable" d="M 273 380 H 380 V 255 H 552 L 568 246"/>
+
+  <!-- Колонны: номера совпадают с легендой. -->
+  <circle class="column" cx="250" cy="180" r="22"/>
+  <text class="token" x="250" y="180">1</text>
+  <path class="leader" d="M 227 180 H 183"/>
+  <text class="label" x="174" y="175" text-anchor="end">Корона</text>
+  <text class="note" x="174" y="199" text-anchor="end">колонна 1</text>
+
+  <circle class="column" cx="950" cy="180" r="22"/>
+  <text class="token" x="950" y="180">2</text>
+  <path class="leader" d="M 973 180 H 1073"/>
+  <text class="label" x="1085" y="175">Ступни</text>
+  <text class="note" x="1085" y="199">колонна 2</text>
+
+  <circle class="column" cx="250" cy="380" r="22"/>
+  <text class="token" x="250" y="380">3</text>
+  <path class="leader" d="M 227 380 H 183"/>
+  <text class="label" x="174" y="375" text-anchor="end">Ладони</text>
+  <text class="note" x="174" y="399" text-anchor="end">колонна 3, +15 фт</text>
+
+  <!-- Начальные позиции существ. Значки указывают центры, а не размер существ. -->
+  <circle cx="600" cy="230" r="34" fill="#58496b" stroke="#30233e" stroke-width="3"/>
+  <text class="token" x="600" y="219" style="fill:#fff">Р</text>
+  <path d="M 600 236 L 609 245 L 600 254 L 591 245 Z" fill="#151019" stroke="#cbb5e4" stroke-width="1.5"/>
+  <path class="leader" d="M 635 235 H 1073"/>
+  <text class="label" x="1085" y="236">Регент</text>
+  <text class="note" x="1085" y="260">Призма в груди.</text>
+  <text class="note" x="1085" y="283">Охраняет проход</text>
+  <text class="note" x="1085" y="306">в библиотеку.</text>
+
+  <circle cx="500" cy="330" r="22" fill="#caac77" stroke="#795c31" stroke-width="2.5"/>
+  <text class="token" x="500" y="330">С</text>
+  <circle cx="700" cy="330" r="22" fill="#caac77" stroke="#795c31" stroke-width="2.5"/>
+  <text class="token" x="700" y="330">С</text>
+  <path class="leader" d="M 723 330 H 1073"/>
+  <text class="label" x="1085" y="336">Два стража</text>
+
+  <!-- Линия видимости к стазису открыта от южного входа. -->
+  <path d="M 600 690 V 505" fill="none" stroke="#438b9b" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+  <!-- Видимая охранная граница, 15 футов от южной стены. -->
+  <path d="M 200 580 H 1000" fill="none" stroke="#b77a25" stroke-width="3" stroke-dasharray="12 5"/>
+  <path class="leader" d="M 1000 580 H 1073"/>
+  <text class="label" x="1085" y="552">Граница охраны</text>
+  <text class="note" x="1085" y="576">Вход за черту — тревога.</text>
+  <text class="note" x="1085" y="600">Воздействие — тоже.</text>
+  <path class="leader" d="M 612 666 H 1073"/>
+  <text class="label" x="1085" y="650">Стазис виден от входа</text>
+  <text class="note" x="1085" y="674">До помоста — 30 фт.</text>
+  <text class="note" x="1085" y="698">Рассеивание из южной</text>
+  <text class="note" x="1085" y="722">зоны: сначала инициатива.</text>
+  <path class="leader" d="M 940 592 H 963 M 940 718 H 963 M 954 592 V 718"/>
+  <rect x="930" y="640" width="48" height="26" fill="#fbf4dc"/>
+  <text class="small" x="954" y="658" text-anchor="middle">15 фт</text>
+
+  <!-- Южный вход, проём 10 футов. -->
+  <path d="M 580 784 V 741 M 620 784 V 741" fill="none" stroke="#576272" stroke-width="2" marker-end="url(#arrow)"/>
+  <text class="label" x="600" y="813" text-anchor="middle">Вход из сада · 10 фт</text>
+
+  <!-- Легенда и практические указания не закрывают игровое поле. -->
+  <path d="M 60 847 H 1260" stroke="#c8cbd0" stroke-width="1.5"/>
+  <text class="label" x="60" y="879">Обозначения</text>
+  <circle class="column" cx="74" cy="909" r="13"/>
+  <text class="note" x="101" y="915">Колонна управления</text>
+  <circle cx="74" cy="947" r="13" fill="#caac77" stroke="#795c31" stroke-width="2"/>
+  <text class="note" x="101" y="953">Страж; «Р» — Регент</text>
+  <path class="cable" d="M 390 909 H 448"/>
+  <text class="note" x="461" y="915">Связь с колонной, не препятствие</text>
+  <rect x="390" y="935" width="58" height="23" fill="url(#galleryHatch)" stroke="#617387"/>
+  <text class="note" x="461" y="953">Площадка выше пола</text>
+  <text class="note" x="855" y="879">Силовой импульс: 10 × 10 фт</text>
+  <text class="small" x="855" y="902">Отмечайте область 2 × 2 клетки</text>
+  <text class="small" x="855" y="924">во время боя; заранее выбранных зон нет.</text>
+  <text class="small" x="855" y="953">Стазис не питается от колонн управления.</text>
+  <text class="small" x="60" y="995">Значки существ обозначают начальные позиции. Их размер и занимаемые клетки определяются характеристиками.</text>
+</svg>
